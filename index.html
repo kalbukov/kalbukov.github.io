@@ -1,1 +1,54 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my-roject</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <header>
+        <nav>
+          <router-link class="logo" to="/">Logo</router-link>
+          <router-link to="/dota2">Dota 2</router-link>
+          <router-link to="/lol">Lol</router-link>
+          <router-link to="/hots">Hots</router-link>
+        </nav>
+
+
+      </header>
+
+      <main>
+        <router-view></router-view>
+      </main>
+
+      
+
+      
+
+    </div>
+
+
+    <script src="dist/build.js"></script>
+    <!--script src="./src/vanilla-tilt.min.js"></script-->
+    <script type="text/javascript">
+    //VanillaTilt.init(document.querySelectorAll(".hero"), {
+      //  reverse:        false,
+      //  max:            50,   
+      //  perspective:    500, 
+      //  scale:          1.1,    
+      //  speed:          400,  
+      //  transition:     true, 
+      //  //axis:           null, 
+      //  reset:          true ,
+      //  easing:         "cubic-bezier(.03,.98,.52,.99)"
+      //});
+    </script>
+
+
+
+  </body>
+</html>
