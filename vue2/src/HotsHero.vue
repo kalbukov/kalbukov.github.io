@@ -78,7 +78,7 @@
   <div class="cont-adv"></div>
 
     <div class="back-top">
-      <router-link class="back" to="/hots">🡄 Back</router-link>
+      <router-link class="back" to="/vue2/hots">🡄 Back</router-link>
       <a href="#" class="top">🡅 Top</a>
     </div>
 

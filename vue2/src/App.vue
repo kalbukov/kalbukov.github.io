@@ -5,20 +5,20 @@
 
 <carousel-3d :autoplay="true" :autoplay-timeout="3000" :controls-visible="true" :width="700" :space="300" :height="450">
   <slide :index="0">
-    <img src="./assets/maxresdefault.jpg" alt="">
+    <img src="https://i.ytimg.com/vi/Kuj2BNeoJoU/maxresdefault.jpg" alt="">
     <p>Read all best guides <a href="/hots">NOW!</a></p>
   </slide>
   <slide :index="1">
-    <img src="./assets/HOTS-Lucio-Main-Image_feature.jpg">
+    <img src="https://static.levelcamp.com/assets/article/2017/02/04/HOTS-Lucio-Main-Image_feature.jpg">
     <p>Heroes of the Storm's next character is...Overwatch's Lucio!</p>
     <center><a href="/hots-lucio-0">READ NOW!</a></center>
   </slide>
   <slide :index="2">
-    <img src="./assets/heroes-of-the-storm.jpg">
+    <img src="http://media.blizzard.com/heroes/images/icons/heroes-facebook-preview.jpg">
     <p>Read all best guides <a href="/hots">NOW!</a></p>
   </slide>
   <slide :index="3">
-    <img src="./assets/maingear-r1-razer-edition.jpg" alt="">
+    <img src="http://assets.razerzone.com/eeimages/razer_pages/26526/projvalerie-og-1200x630-v1.png" alt="">
     <p>Chose best in <a href="/">RAZER</a></p>
   </slide>
   <slide :index="4">

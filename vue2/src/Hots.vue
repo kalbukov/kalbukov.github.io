@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img class="game-logo" src="./assets/hos_logo_m01_sm.png">
+    <img class="game-logo" src="http://matzle.de/wp-content/uploads/2014/05/HOS_Logo_m01_sm-e1400881212390.png">
     <h1>Welcome to Hots gayds!</h1> 
     <section class="filter">
       <h2>Filter</h2>
@@ -83,7 +83,7 @@
     <div class="cont-adv"></div>
 
     <div class="back-top">
-      <router-link class="back" to="/">🡄 Back</router-link>
+      <router-link class="back" to="/vue2/">🡄 Back</router-link>
       <a href="#" class="top">🡅 Top</a>
     </div>
 
