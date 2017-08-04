@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>my-roject</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<base href="/vue2/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my-roject</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div id="wrapper">
+	<div id="wrapper">
 
-      <header>
-        <nav>
-          <router-link class="logo" to="/vue2/">Logo</router-link>
-          <router-link to="/vue2/dota2">Dota 2</router-link>
-          <router-link to="/vue2/lol">Lol</router-link>
-          <router-link to="/vue2/hots">Hots</router-link>
-        </nav>
-
-
-      </header>
-
-      <main>
-        <router-view></router-view>
-      </main>
-
-      
-
-      
-
-    </div>
+		<header>
+			<nav>
+				<router-link class="logo" to="/">Logo</router-link>
+				<router-link to="/dota2">Dota 2</router-link>
+				<router-link to="/lol">Lol</router-link>
+				<router-link to="/hots">Hots</router-link>
+			</nav>
 
 
-    <script src="/vue2/dist/build.js"></script>
-    <!--script src="./src/vanilla-tilt.min.js"></script-->
-    <script type="text/javascript">
+		</header>
+
+		<main>
+			<router-view></router-view>
+		</main>
+
+		
+
+		
+
+	</div>
+
+
+	<script src="/vue2/dist/build.js"></script>
+	<!--script src="./src/vanilla-tilt.min.js"></script-->
+	<script type="text/javascript">
     //VanillaTilt.init(document.querySelectorAll(".hero"), {
       //  reverse:        false,
       //  max:            50,   
@@ -46,9 +47,9 @@
       //  reset:          true ,
       //  easing:         "cubic-bezier(.03,.98,.52,.99)"
       //});
-    </script>
+  </script>
 
 
 
-  </body>
+</body>
 </html>

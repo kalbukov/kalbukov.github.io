@@ -24,11 +24,11 @@ Vue.use(Carousel3d)
 
 
 const routes = [
-  { path: '/vue2/', component: App },
-  { path: '/vue2/dota2', component: Dota2 },
-  { path: '/vue2/lol', component: Lol },
-  { path: '/vue2/hots', component: Hots },
-  { name: 'hero', path: '/vue2/hots-:HeroId-:Test', component: HotsHero }
+  { path: '/', component: App },
+  { path: '/dota2', component: Dota2 },
+  { path: '/lol', component: Lol },
+  { path: '/hots', component: Hots },
+  { name: 'hero', path: '/hots-:HeroId-:Test', component: HotsHero }
 ]
 
 
