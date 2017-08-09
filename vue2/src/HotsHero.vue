@@ -78,7 +78,7 @@
   <div class="cont-adv"></div>
 
     <div class="back-top">
-      <router-link class="back" to="/hots">🡄 Back</router-link>
+      <a class="back" @click="back">🡄 Back</a>
       <a href="#" v-scroll-to="'h1'">🡅 Top</a>
     </div>
 
@@ -97,7 +97,8 @@
         hotsdb: hotsdb,
         hero: null,
         test: null,
-        title: 'My Title'
+        title: 'My Title',
+        back:()=>history.back()
       }
     },
     created: function() {

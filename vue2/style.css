@@ -592,7 +592,9 @@ background-color: #47464e;
   text-decoration: none;
 }
 
-
+.back-top a {
+  text-decoration: none;
+}
 
 /* media requires */
 

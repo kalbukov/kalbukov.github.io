@@ -86,7 +86,7 @@
     <div class="cont-adv"></div>
 
     <div class="back-top">
-      <router-link class="back" to="/vue2/">🡄 Back</router-link>
+      <a class="back" @click="back">🡄 Back</a>
       <a href="#" v-scroll-to="'h1'">🡅 Top</a>
     </div>
 
@@ -121,6 +121,7 @@ export default {
       userInput: '',
       hotsdb: hotsdb,
       isStar: null,
+      back:()=>history.back()
     }
   },
   computed: {
