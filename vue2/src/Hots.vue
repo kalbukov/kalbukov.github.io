@@ -11,19 +11,19 @@
           <div class="group-familly">
             <div class="group">
               <label for="universe">Diablo</label>
-              <input class="option-input" type="checkbox" name="Diablo">  
+              <input @change="onChange('diablo')" class="option-input" type="checkbox":checked="true" name="diablo">  
             </div>
             <div class="group">
               <label for="universe">StarCraft</label>
-              <input class="option-input" type="checkbox" name="StarCraft"> 
+              <input @change="onChange('starcraft')" class="option-input" type="checkbox":checked="true" name="starcraft"> 
             </div>
             <div class="group">
               <label for="universe">Warcraft</label>
-              <input class="option-input" type="checkbox" name="Warcraft">  
+              <input @change="onChange('warcraft')" class="option-input" type="checkbox":checked="true" name="warcraft">  
             </div>
             <div class="group">
               <label for="universe">Overwatch</label>
-              <input class="option-input" type="checkbox" name="Overwatch">  
+              <input @change="onChange('overwatch')" class="option-input" type="checkbox":checked="true" name="overwatch">  
             </div>
           </div> 
         </div>
@@ -33,19 +33,19 @@
           <div class="group-familly">
             <div class="group">
               <label for="classes">Warrior</label>
-              <input class="option-input" type="checkbox" name="warrior">
+              <input @change="onChange('warrior')" class="option-input" type="checkbox":checked="true" name="warrior">
             </div>
             <div class="group">
               <label for="classes">Support</label>
-              <input class="option-input" type="checkbox" name="support">
+              <input @change="onChange('support')" class="option-input" type="checkbox":checked="true" name="support">
             </div>
             <div class="group">
               <label for="classes">Assasin</label>
-              <input class="option-input" type="checkbox" name="assasin">
+              <input  @change="onChange('assasin')" class="option-input" type="checkbox":checked="true" name="assasin">
             </div>
             <div class="group">
               <label for="classes">Specialist</label>
-              <input @change="onChange('specialist')" class="option-input" type="checkbox":checked="false" name="specialist"> 
+              <input @change="onChange('specialist')" class="option-input" type="checkbox":checked="true" name="specialist"> 
             </div>
           </div>
         </div>
@@ -66,7 +66,10 @@
       <div class="heroes">
 
     <!--div class="hero" v-for="(hero, index) in filterBy(hotsdb, userInput)" :key="hero.heroid" -->
-    <div  v-for="(hero, index) in filteredArticles" :key="hero.heroid" class="hero">
+    <div  
+    v-for="(hero, index) in filteredArticles" 
+    :key="hero.heroid" class="hero" 
+    v-bind:class="[hero.role, hero.universe]">
           <router-link :to="{ name: 'hero', params: { HeroId: hero.name, Id: index, Test: hero.heroid } }">
             <img :src="hero.img" alt="">
             <div class="name">{{ hero.name | capitalize }}<!--  -- {{ index }} -- {{ hero.heroid }} --></div>
@@ -139,10 +142,10 @@ export default {
    },
   methods:{
     onChange(val){
-      console.log(val);
-      if(val=="specialist"){
-        
-      }
+       var specialist = document.querySelectorAll('.'+val);
+       specialist.forEach( function(el, ind) {
+       		el.classList.toggle('none'+val);
+       });
     }
 }
 
@@ -247,6 +250,10 @@ export default {
     border-radius: 2px;
   }
 
+.nonesupport, .noneoverwatch, .nonestarcraft, .noneassasin, .nonewarcraft, .nonespecialist, .nonediablo, .nonewarrior {
+  display: none
+}
+  
   @media only screen and (max-width: 745px){
 
 
