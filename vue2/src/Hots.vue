@@ -87,7 +87,7 @@
 
     <div class="back-top">
       <router-link class="back" to="/vue2/">🡄 Back</router-link>
-      <a href="#" class="top">🡅 Top</a>
+      <a href="#" v-scroll-to="'h1'">🡅 Top</a>
     </div>
 
 

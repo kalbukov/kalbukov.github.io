@@ -79,7 +79,7 @@
 
     <div class="back-top">
       <router-link class="back" to="/hots">🡄 Back</router-link>
-      <a href="/#app" class="top">🡅 Top</a>
+      <a href="#" v-scroll-to="'h1'">🡅 Top</a>
     </div>
 
 

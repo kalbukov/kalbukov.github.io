@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Vue2Filters from 'vue2-filters'
 import VueHead from 'vue-head'
 import Carousel3d from 'vue-carousel-3d'
-
+import VueScrollTo from'vue-scrollto'
 
 
 
@@ -21,6 +21,17 @@ Vue.use(VueRouter)
 Vue.use(Vue2Filters)
 Vue.use(VueHead)
 Vue.use(Carousel3d)
+
+Vue.use(VueScrollTo, {
+     container: "body",
+     duration: 500,
+     easing: "ease",
+     offset: 0,
+     cancelable: true,
+     onDone: false,
+     onCancel: false
+ })
+
 
 
 const routes = [
