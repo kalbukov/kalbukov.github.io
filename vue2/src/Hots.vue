@@ -83,11 +83,11 @@
 
     </section>
 
-    <div class="cont-adv"></div>
+    <!-- <div class="cont-adv"></div> -->
 
     <div class="back-top">
-      <a class="back" @click="back">🡄 Back</a>
-      <a href="#" v-scroll-to="'h1'">🡅 Top</a>
+      <a class="back" @click="back"><i class="fa fa-shield fa-rotate-90"></i> Back</a>
+      <a href="#" v-scroll-to="'h1'"><i class="fa fa-shield fa-flip-vertical"></i> Top</a>
     </div>
 
 
@@ -101,16 +101,6 @@
 <script>
 
   import hotsdb from '../src/db/hotsdb.js'
-
-//export default {
-//  name: 'app',
-//  data () {
-//    return {
-//      hotsdb: hotsdb
-//    }
-//  } 
-//}
-
 
 
 export default {

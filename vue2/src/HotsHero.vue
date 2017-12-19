@@ -21,7 +21,7 @@
     <div class="result-hero-info">
       <div class="titel">Best Guide</div>
       <div class="info info-guid">
-        <div class="guid" v-for="guide in hero.guide">
+        <div class="guid" v-for="guide in hero.guide" :key="guide.level">
           <div class="level">LEVEL {{ guide.level }}</div>
           <img :src="guide.img" alt="">
           <div class="abil-name">{{ guide.abilname }}</div>
@@ -59,7 +59,7 @@
 
       <div class="titel">Abilities & Skills</div>
       <div class="info info-reating">
-        <div class="skill" v-for="skill in hero.skill">
+        <div class="skill" v-for="skill in hero.skill" :key="skill.level">
           <div class="level">LEVEL {{ skill.level }}</div>
           <img :src="skill.img" alt="">
           <div class="abil-name">{{ skill.abilname }}</div>
@@ -69,17 +69,14 @@
     </div>
 
 
-
-
   </div>
 
 
-
-  <div class="cont-adv"></div>
+  <!-- <div class="cont-adv"></div> -->
 
     <div class="back-top">
-      <a class="back" @click="back">🡄 Back</a>
-      <a href="#" v-scroll-to="'h1'">🡅 Top</a>
+      <a class="back" @click="back"><i class="fa fa-shield fa-rotate-90"></i> Back</a>
+      <a href="#" v-scroll-to="'h1'"><i class="fa fa-shield fa-flip-vertical"></i> Top</a>
     </div>
 
 

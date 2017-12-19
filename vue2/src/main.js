@@ -9,7 +9,6 @@ import VueScrollTo from'vue-scrollto'
 
 // Main pages
 import App from './App.vue'
-import Dota2 from './Dota2.vue'
 import Lol from './Lol.vue'
 import Hots from './Hots.vue'
 
@@ -36,13 +35,10 @@ Vue.use(VueScrollTo, {
 
 const routes = [
   { path: '/', component: App },
-  { path: '/dota2', component: Dota2 },
   { path: '/lol', component: Lol },
   { path: '/hots', component: Hots },
   { name: 'hero', path: '/hots-:HeroId-:Test', component: HotsHero }
 ]
-
-
 
 
 

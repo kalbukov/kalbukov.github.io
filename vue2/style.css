@@ -172,9 +172,10 @@ a {
 
 .cont-adv {
   display: block;
-  height: 100px;
-  background-color: #fff;
+  height: 30px;
+  background-color: #242328;
   margin: 25px 35px;
+  border-bottom: solid 1px #f51e46;
 }
 
 .all-heroes, .banners {
@@ -382,10 +383,6 @@ a {
     padding-top: 35px;
 }
 
-.force-overflow
-{
- /* min-height: 600px;*/
-}
 
 .heropage .result-hero-info::-webkit-scrollbar-track
 {
@@ -512,70 +509,6 @@ background-color: #47464e;
 }
 
 
-/* mian animatuions 
-
-.hero, .hero a .name {
-	animation: shadow 10s ease-in-out infinite;
-}
-
-
-@-webkit-keyframes shadow {
-    0%   {
-    	color: #f51d46;
-    	border-bottom: 2px solid #f51d46;
-    	box-shadow: 0px -2px 20px 0px #f51d46;
-    }
-
-    25%  {
-    	color: yellow;
-    	border-bottom: 2px solid yellow;
-    	box-shadow: 0px -2px 20px 0px yellow;
-    }
-
-    50%  {
-    	color: #42b983;
-    	border-bottom: 2px solid #42b983;
-    	box-shadow: 0px -2px 20px 0px #42b983;
-    }
-
-    100% {
-    	color: green;
-    	border-bottom: 2px solid green;
-    	box-shadow: 0px -2px 20px 0px green;
-    }
-
-}
-
-
-@keyframes shadow {
-    0%   {
-    	color: #f51d46;
-    	border-bottom: 2px solid #f51d46;
-    	box-shadow: 0px -2px 20px 0px #f51d46;
-    }
-
-    25%  {
-    	color: yellow;
-    	border-bottom: 2px solid yellow;
-    	box-shadow: 0px -2px 20px 0px yellow;
-    }
-
-    50%  {
-    	color: #42b983;
-    	border-bottom: 2px solid #42b983;
-    	box-shadow: 0px -2px 20px 0px #42b983;
-    }
-
-    100% {
-    	color: green;
-    	border-bottom: 2px solid green;
-    	box-shadow: 0px -2px 20px 0px green;
-    }
-
-}
-*/
-
-
 .back-top {
     width: 85px;
     height: 83px;
@@ -594,8 +527,22 @@ background-color: #47464e;
 
 .back-top a {
   text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
 }
 
+.back-top a i {
+  float: left;
+}
+
+footer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0px;
+  color: #fff;
+}
 /* media requires */
 
 @media only screen and (max-width: 745px){
