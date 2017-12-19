@@ -4,20 +4,20 @@
     <carousel-3d :autoplay="true" :autoplay-timeout="3000" :controls-visible="true" :width="700" :space="300" :height="450">
       <slide :index="0">
         <img src="https://i.ytimg.com/vi/Kuj2BNeoJoU/maxresdefault.jpg" alt="">
-        <p>Read all best guides <router-link to="/vue2/hots">NOW!</router-link></p>
+        <p>Read all best guides <router-link to="/hots">NOW!</router-link></p>
       </slide>
       <slide :index="1">
         <img src="https://static.levelcamp.com/assets/article/2017/02/04/HOTS-Lucio-Main-Image_feature.jpg">
         <p>Heroes of the Storm's next character is...Overwatch's Lucio!</p>
-        <center><router-link to="/vue2/hots-lucio-0">READ NOW!</router-link></center>
+        <center><router-link to="/hots-lucio-0">READ NOW!</router-link></center>
       </slide>
       <slide :index="2">
         <img src="http://media.blizzard.com/heroes/images/icons/heroes-facebook-preview.jpg">
-        <p>Read all best guides <router-link to="/vue2/hots">NOW!</router-link></p>
+        <p>Read all best guides <router-link to="/hots">NOW!</router-link></p>
       </slide>
       <slide :index="3">
         <img src="http://assets.razerzone.com/eeimages/razer_pages/26526/projvalerie-og-1200x630-v1.png" alt="">
-        <p>Chose best in <router-link to="/vue2/">RAZER</router-link></p>
+        <p>Chose best in <router-link to="/">RAZER</router-link></p>
       </slide>
       <slide :index="4">
         <img src="http://bnetcmsus-a.akamaihd.net/cms/blog_header/ue/UESXSG7YL5FT1487903430966.jpg" alt="">
@@ -33,7 +33,7 @@
     </carousel-3d>
 
     <div class="hots_button">
-      <router-link class="hots_button__link" to="/vue2/hots">Start with Hots NOW</router-link>
+      <router-link class="hots_button__link" to="/hots">Start with Hots NOW</router-link>
     </div>
 
   </div>
