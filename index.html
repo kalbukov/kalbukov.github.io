@@ -3,51 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>my-roject</title>
+    <title>Angular 5 & Vue2</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
     <div id="wrapper">
 
-      <header>
-        <nav>
-          <router-link class="logo" to="/">Logo</router-link>
-          <router-link to="/dota2">Dota 2</router-link>
-          <router-link to="/lol">Lol</router-link>
-          <router-link to="/hots">Hots</router-link>
-        </nav>
+      <div class="links">
+        <a href="/vue2/" class="link">
+          <img src="https://vuejs.org/images/logo.png" alt="vue">
+          <p>Vue hero app</p>
+        </a>
+        <a href="/angpool/" class="link">
+          <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular">
+          <p>Angular pool app</p>
+        </a>
+      </div>
 
-
-      </header>
-
-      <main>
-        <router-view></router-view>
-      </main>
-
-      
-
-      
 
     </div>
 
 
-    <script src="dist/build.js"></script>
-    <!--script src="./src/vanilla-tilt.min.js"></script-->
-    <script type="text/javascript">
-    //VanillaTilt.init(document.querySelectorAll(".hero"), {
-      //  reverse:        false,
-      //  max:            50,   
-      //  perspective:    500, 
-      //  scale:          1.1,    
-      //  speed:          400,  
-      //  transition:     true, 
-      //  //axis:           null, 
-      //  reset:          true ,
-      //  easing:         "cubic-bezier(.03,.98,.52,.99)"
-      //});
-    </script>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.links {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  min-width: 300px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.link img {
+  width: 100%;
+}
+</style>
 
 
   </body>
